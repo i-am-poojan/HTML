@@ -1,0 +1,120 @@
+<!-- form tag -Always use form tag when you have required user information -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormTag</title>
+  </head>
+  <body>
+    <form action="" oninput="ageresult.value = age.value">
+      <div>
+        <!-- autocomplete == name -- full name
+                                 additional-name -- Father name
+                                 given-name -- first name
+                                 family-name -- surname
+            -->
+
+        <label for="name">Name</label>
+        <input type="text" name="" id="name" autocomplete="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          pattern="/^[A-Za-z0-9-_.]+@[a-zA-Z]{2,8}.[a-zA-Z]{2,5}$/"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="search">Search</label>
+        <input type="search" name="" id="search" />
+      </div>
+
+      <div>
+        <label for="datetime">DateTime</label> 
+        <input type="time" name="" id="datetime" />
+      </div>
+
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="" id="color">
+      </div>
+
+      <!-- <div>
+        <label for="college">College</label>
+        <select name="" id="college">
+            <option value="">Select your college</option>
+            <option value="ldrp">ldrp</option>
+            <option value="nirma">nirma</option>
+        </select>
+      </div> -->
+
+      <div>
+        <label for="college">college</label>
+        <input type="text" name="" id="college" list="college-list">
+        <datalist id="college-list">
+            <option>lj</option>
+            <option>Nirma</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="" id="gender" autocomplete="sex">
+            <option value="">Pls select you gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>gender</legend>
+        <div>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="hobbies">hobbies</label>
+        <select id="hobbies" multiple>
+            <option value="">Please select your hobbies</option>
+            <optgroup label="sports">
+                <option value="cricket">cricket</option>
+                <option value="Football">Football</option>
+            </optgroup>
+            <optgroup label="acrivity">
+                <option value="dancing">Dancing</option>
+                <option value="singing">singing</option>
+            </optgroup>
+           
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="range" name="" id="age" min="0" value="20" max="100">
+        <output name="ageresult" for="age">20</output>
+      </div>
+
+      <div>
+        <progress min="0" value="20" max="100"></progress>
+      </div>
+
+      <div>
+        <label for="range">Fuel level:</label>
+        <meter id="range" name="ragne" min="0" max="100" low="33" high="66" optimum="80" value="75">at 50/100</meter>      
+    </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
