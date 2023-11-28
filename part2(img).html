@@ -1,11 +1,70 @@
+<!-- em , strong , mark -- use for accessibility , ui  , SEO increase -->
+<!-- mainly two approach desktop first approach and mobile first approach -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- <div class="test" ">
+
+    </div> -->
+    <dialog open>Hello world</dialog>
+
+    <!-- According to screen size picture upload -->
+    <!-- <picture>
+        <source srcset="Assets/picture/img1x.jpg" media="(max-width:640px)">
+        <source srcset="Assets/picture/img2x.jpg" media="(max-width:1024px)">
+        <img src="Assets/picture/img3x.jpg" style="width: 100vw; height: 100vh; aspect-ratio: 16/9;" alt="banner">
+    </picture> -->
+
+    <!-- picture set according to dpr(dimensity pixel ration) -->
+    <!-- <picture>
+      <source
+        srcset="./Assets/picture/img2x.jpg 2x, ./Assets/picture.img3x.jpg 3x"/>
+
+      <img src="./Assets/picture/img1x.jpg" style="width: 100vw" alt="Banner" />
+    </picture> -->
+
+    <!-- according to type supporting picture will be come -->
+    <picture>
+        <source srcset="./Assets/picture/img3x.avif" type="image/avif">
+        <source srcset="./Assets/picture/img3x.webp" type="image/webp">
+        <img src="./Assets/picture/img1x.jpg" style="width: 100vw ; height: 100vh;" alt="">
+    </picture>
+
+    <!-- <style>
+        .test{
+            background-color: red;
+            width: 100vw;
+            height: 100vh;
+        }
+ 
+        @media screen and (max-width:1000px) {
+            .test{
+                background-color: yellow;
+            }
+            
+        }
+        @media screen and (max-width:800px) {
+            .test{
+                background-color: blue;
+            }
+            
+        }
+    </style> -->
+
+    <h1 style="background: red">Hi what's up ?</h1>
+
+    <h1 style="background-color: yellow; display: inline">I am Fine !</h1>
+
+    <p>
+      Lorem ipsum <em>Poojan</em>dolor Lorem ipsum
+      <strong><mark>Mark is working </mark>$1000000 </strong>dolor sit amet.
+      sit.
+    </p>
+  </body>
 </html>
