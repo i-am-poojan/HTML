@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls controlslist="nofullscreen" name="banner_video" id="banner_video" style="aspect-ratio: 16/9; width: 500px;" >
+        <source src="Assets/Video/flower.webm" type="video/webm" />
+      
+        <source src="Assets/Video/flower.mp4" type="video/mp4" />
+<!--       
+        
+        <a href="Assets/Video/flower.webm">WEBM</a>
+       
+        <a href="Assets/Video/flower.mp4">MP4</a> -->
+        
+      </video>
+
+      <button type="button" onclick="banner_video.play()">Play</button>
+      <button type="button" onclick="banner_video.pause()">Pause</button>
+
+      <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio controls src="Assets/Audio/test.mp3">
+          <a href="Assets/Audio/test.mp3"> Download audio </a>
+        </audio>
+      </figure>
+      
+      
+</body>
+</html>
